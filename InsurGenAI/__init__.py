@@ -5,13 +5,13 @@ GitHub: https://github.com/PanyiDong/
 Actuarial and Risk Management Sciences, University of Illinois at Urbana-Champaign (UIUC)
 
 Project: InsurGenAI
-Latest Version: <<projectversion>>
-Relative Path: /__init__.py
+Latest Version: 0.0.1
+Relative Path: /InsurGenAI/__init__.py
 File Created: Sunday, 12th October 2025 10:34:18 am
 Author: Panyi Dong (panyid2@illinois.edu)
 
 -----
-Last Modified: Sunday, 12th October 2025 10:34:18 am
+Last Modified: Sunday, 12th October 2025 1:46:29 pm
 Modified By: Panyi Dong (panyid2@illinois.edu)
 
 -----

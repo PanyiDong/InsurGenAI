@@ -4,14 +4,14 @@ Author: Panyi Dong
 GitHub: https://github.com/PanyiDong/
 Actuarial and Risk Management Sciences, University of Illinois at Urbana-Champaign (UIUC)
 
-Project: deployment
-Latest Version: <<projectversion>>
-Relative Path: /__init__.py
+Project: InsurGenAI
+Latest Version: 0.0.1
+Relative Path: /InsurGenAI/deployment/__init__.py
 File Created: Sunday, 12th October 2025 10:36:07 am
 Author: Panyi Dong (panyid2@illinois.edu)
 
 -----
-Last Modified: Sunday, 12th October 2025 10:39:47 am
+Last Modified: Sunday, 12th October 2025 2:53:34 pm
 Modified By: Panyi Dong (panyid2@illinois.edu)
 
 -----
@@ -37,3 +37,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+
+from .unified import get_chat_model
+
+__all__ = ["get_chat_model"]
