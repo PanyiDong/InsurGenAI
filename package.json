@@ -1,0 +1,19 @@
+{
+    "name": "InsurGenAI",
+    "author": {
+        "name": "Panyi Dong",
+        "email": "panyid2@illinois.edu"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PanyiDong/GenAI"
+    },
+    "main": "main.py",
+    "private": false,
+    "version": "0.0.1",
+    "description": "GenAI toolkit for insurance applications.",
+    "install_requires": [
+        "torch",
+        "transformers"
+    ]
+}

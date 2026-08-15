@@ -11,7 +11,7 @@ File Created: Sunday, 12th October 2025 1:54:35 pm
 Author: Panyi Dong (panyid2@illinois.edu)
 
 -----
-Last Modified: Sunday, 12th October 2025 1:54:37 pm
+Last Modified: Sunday, 12th October 2025 9:46:06 pm
 Modified By: Panyi Dong (panyid2@illinois.edu)
 
 -----
@@ -55,7 +55,9 @@ class DeploymentResult:
 
 
 def deploy_model(
-    model_name: str = "llama-2-7b", provider: str = "local", **kwargs
+    model_name: str = "meta-llama/Llama-3.2-3B-Instruct",
+    provider: str = "local",
+    **kwargs,
 ) -> DeploymentResult:
     config = {
         "framework": "pytorch",
@@ -68,7 +70,7 @@ def deploy_model(
 
 
 def get_chat_model(
-    model_name: str = "llama-2-7b",
+    model_name: str = "meta-llama/Llama-3.2-3B-Instruct",
     provider: str = "local",
     device: Optional[int] = None,
     memory: bool = True,

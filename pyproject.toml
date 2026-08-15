@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "InsurGenAI"
+version = "0.0.1"
+description = "GenAI toolkit for insurance applications."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [
+    { name = "Panyi Dong", email = "panyid2@illinois.edu" },
+]
+keywords = [
+    "insurance",
+    "genai",
+    "llm",
+    "huggingface",
+    "transformers",
+    "deployment",
+    "nlp",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch",
+    "transformers",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "build",
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/PanyiDong/InsurGenAI"
+Repository = "https://github.com/PanyiDong/InsurGenAI"
+Issues = "https://github.com/PanyiDong/InsurGenAI/issues"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+platforms = ["Linux", "Windows"]
+
+[tool.setuptools.packages.find]
+include = ["InsurGenAI*"]
+exclude = [
+    "tests*",
+    "Dockerfiles*",
+    "example*",
+    "experiments*",
+    "archive*",
+    "data*",
+    "docs*",
+    ".github*",
+    "build*",
+    "dist*",
+]
+
+[tool.setuptools.package-data]
+InsurGenAI = ["data/*", "example/*"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
